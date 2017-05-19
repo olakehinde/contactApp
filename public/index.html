@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact list</title>
+	<link rel="stylesheet" type="text/css" href="style/styles.css">
+</head>
+<!-- <script type="text/javascript">
+	function load() {
+		var page = document.getElementByClass('module-active');
+	}
+
+	window.onload = load;
+</script> -->
+<body onload="document.contacts.name.focus()">
+
+	<form id="add-contact" name="contacts">
+		<label for="add-contact" class="header">Add Contact</label>
+		<input type="text" class="contact-name" placeholder="Name" id="name">
+		<input type="text" class="phone-number" placeholder="Phone number" id="phone">
+
+		<input type="submit" value="Save" class="submit">
+	</form>
+	
+	<div id="contacts">
+		<div class="add-contact" id="click">Add Contact</div>
+		<ul id="contact-list">
+		</ul>
+	</div>
+
+</body>
+<script src="js/system.js"></script>
+<script type="text/javascript">
+	SystemJS.import('js/app.js'); 
+</script>
+</html>

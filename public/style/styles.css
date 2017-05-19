@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Georgia";
+	font-size: 16px;
+	background-color: #444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.module-active {
+	opacity: 1 !important;
+	pointer-events: auto !important;
+}
+
+#add-contact {
+	position: absolute;
+	display: table;
+	box-sizing: border-box;
+	padding: 54px 54px;
+	top: 20vh;
+	background-color: #f3f3f3;
+	border-radius: 3px;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+#add-contact .header {
+	position: relative;
+	display: block;
+	font-size: 24px;
+	margin-bottom: 36px;
+}
+
+#add-contact input {
+	display: block;
+	outline: none;
+	border: none;
+	padding: 24PX;
+	width: 78%;
+	font-size: 18px;
+	margin-bottom: 24px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+#add-contact .submit {
+	box-shadow: 0px 2px 6px rgba(0,0,0,.2);
+	width: 40%;
+	margin: 3;
+}
+
+#contacts {
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 3px;
+	width: 50%;
+	background-color: #f3f3f3;
+	height: 82vh;
+	top: 9vh;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+#contact-list {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 36px 54px;
+	list-style: none;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.contact {
+	position: relative;
+	width: 54%;
+	box-sizing: border-box;
+	padding: 24px;
+	background-color: white;
+	box-shadow: 0px 2px 6px rgba(0,0,0,.2);
+	margin-bottom: 24px;
+}
+
+#contacts .add-contact {
+	cursor: pointer;
+	position: absolute;
+	right: 34px;
+	top: 34px;
+	display: block;
+	color: inherit;
+	padding: 18px;
+	width: 150px;
+	background-color: #888;
+	font-size: 18px;
+	text-decoration: none;
+	z-index: 20;
+}
